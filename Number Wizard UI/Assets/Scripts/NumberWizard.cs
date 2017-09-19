@@ -41,7 +41,7 @@ public class NumberWizard : MonoBehaviour {
 
 	void NextGuess ()
 	{
-		guess = Random.Range(min,max+1);
+		guess = Random.Range(min+1,max+1);
 		text.text = guess.ToString();
 		maxGuessesAllowed = maxGuessesAllowed - 1;
 		guesses.text = "Guesses Remaining: " + maxGuessesAllowed.ToString();
